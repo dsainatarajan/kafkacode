@@ -19,7 +19,7 @@ public class ConsumerClient {
 	      //Creating the consumer properties
 	      Properties properties = new Properties();
 	      
-	      properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "node1:9092,node2:9092,node3:9092");
+	      properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "kafka1:9092,kafka2:9092,kafka3:9092");
 	      properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 	      properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 	      properties.put(ConsumerConfig.GROUP_ID_CONFIG, "TestConsumerGroup");
